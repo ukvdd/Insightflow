@@ -42,7 +42,7 @@ export default function LoadingState() {
               key={i}
               className={`
                 flex items-start gap-4 px-5 py-4 rounded-xl transition-all duration-500
-                ${isActive ? "bg-bg-secondary border border-border-subtle" : ""}
+                ${isActive ? "bg-white border border-border-subtle shadow-sm" : ""}
                 ${isDone ? "opacity-50" : ""}
                 ${!isActive && !isDone ? "opacity-30" : ""}
               `}
@@ -78,7 +78,7 @@ export default function LoadingState() {
       </div>
 
       {/* Progress bar */}
-      <div className="mt-8 h-0.5 bg-bg-tertiary rounded-full overflow-hidden">
+      <div className="mt-8 h-0.5 bg-border-subtle rounded-full overflow-hidden">
         <div className="h-full w-1/4 bg-accent-amber/60 rounded-full animate-loading-bar" />
       </div>
 

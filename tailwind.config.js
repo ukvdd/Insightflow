@@ -8,25 +8,25 @@ module.exports = {
     extend: {
       colors: {
         bg: {
-          primary: "#0C0C0E",
-          secondary: "#141416",
-          tertiary: "#1C1C20",
-          hover: "#24242A",
+          primary: "#FAFAF8",
+          secondary: "#F2EDE7",
+          tertiary: "#EAE4DC",
+          hover: "#E2DBD1",
         },
         text: {
-          primary: "#E8E4DF",
-          secondary: "#9A9590",
-          muted: "#6A6560",
+          primary: "#1C1917",
+          secondary: "#57534E",
+          muted: "#A8A29E",
         },
         accent: {
-          amber: "#E8A84C",
-          green: "#4CAF82",
-          blue: "#5B8DEF",
-          rose: "#D4687A",
+          amber: "#D97706",
+          green: "#059669",
+          blue: "#2563EB",
+          rose: "#E11D48",
         },
         border: {
-          subtle: "#2A2A2E",
-          active: "#4A4A50",
+          subtle: "#E7E0D7",
+          active: "#C9C0B4",
         },
       },
       fontFamily: {

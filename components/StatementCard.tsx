@@ -6,9 +6,9 @@ const SIGNAL_COLORS: Record<string, string> = {
   behavior: "bg-accent-blue/15 text-accent-blue border-accent-blue/20",
   emotion: "bg-accent-amber/15 text-accent-amber border-accent-amber/20",
   unmet_need: "bg-accent-green/15 text-accent-green border-accent-green/20",
-  workaround: "bg-purple-500/15 text-purple-400 border-purple-500/20",
-  mental_model: "bg-cyan-500/15 text-cyan-400 border-cyan-500/20",
-  contradiction: "bg-orange-500/15 text-orange-400 border-orange-500/20",
+  workaround: "bg-purple-100 text-purple-700 border-purple-200",
+  mental_model: "bg-cyan-100 text-cyan-700 border-cyan-200",
+  contradiction: "bg-orange-100 text-orange-700 border-orange-200",
 };
 
 interface Statement {
