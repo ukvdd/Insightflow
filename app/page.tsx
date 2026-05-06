@@ -4,6 +4,7 @@
 import { useState, useEffect } from "react";
 import ResultsLayout from "@/components/ResultsLayout";
 import LoadingState from "@/components/LoadingState";
+import sampleResult from "@/lib/sampleResult.json";
 
 interface AnalysisResult {
   statements: Array<{
@@ -206,6 +207,16 @@ export default function Home() {
 
   const handleAnalyze = async () => {
     if (!transcript.trim()) return;
+
+    // Sample transcript shortcut: skip API and use the pre-computed result
+    if (transcript.trim() === SAMPLE_TRANSCRIPT.trim()) {
+      const data = sampleResult as AnalysisResult;
+      const saved = saveToStorage(data, transcript);
+      setSavedAnalysis(saved);
+      setResult(data);
+      setViewMode("results");
+      return;
+    }
 
     setViewMode("loading");
     setError(null);
